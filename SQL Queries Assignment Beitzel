@@ -3,17 +3,27 @@ SQL Query Set 1:
 Query1: https://quarry.wmflabs.org/query/21086
 Query2: https://quarry.wmflabs.org/query/21058
 Plausible explanation for use of query: 
-It appears the first query is designed to try to find all of the most frequent editors of the Turkish Wikipedia, where the revisions to the Wikipedia pages happened between December 2016 and December 2016. It also looked for users that registered between December 2016 and December 2017. The first query returned 0 results, though, and I think that’s because the revision and user registration logic didn’t make sense. The 2nd attempt got rid of the user registration limit and also fixed the revision time frame limit, and then it produced plausible results within a time frame that seemed more likely. This user may be interested in trying to determine which users are making the most edits in the Turkish Wikipedia, and then individually try to determine if those users are bots or not.
+It appears the first query is designed to try to find all of the most frequent editors of the Turkish Wikipedia, where the revisions to the Wikipedia pages happened between December 2016 and December 2016. 
+It also looked for users that registered between December 2016 and December 2017. The first query returned 0 results, though, and I think that’s because the revision and user registration logic didn’t make sense. 
+The 2nd attempt got rid of the user registration limit and also fixed the revision time frame limit, and then it produced plausible results within a time frame that seemed more likely. 
+This user may be interested in trying to determine which users are making the most edits in the Turkish Wikipedia, and then individually try to determine if those users are bots or not.
 
 SQL Query Set 2:
 Query1: https://quarry.wmflabs.org/query/18798
 Query2: https://quarry.wmflabs.org/query/18797
 Plausible explanation for use of query:
-This user had well formatted code and even a decent description which made trying to understand what is happening much easier. It looks like the first query details the number of users with the ‘patrol’ user right that had recorded actions between 12/1/2015 and 5/1/2017, and it also produced results detailing different breakdowns by activity level. The second query gave similar monthly breakdowns, but the columns were by action type (deletion, review, unreview, tagging) instead of user action frequency level. This user may be trying to get an idea of how many ‘patrol’ users are active and what type of actions the perform on average. This user may be coordinating outreach with all of the ‘patrol’ users and wanted to gather this data first to get a sense of action frequency scope, for some research-related pruposes. 
+This user had well formatted code and even a decent description which made trying to understand what is happening much easier. 
+It looks like the first query details the number of users with the ‘patrol’ user right that had recorded actions between 12/1/2015 and 5/1/2017, and it also produced results detailing different breakdowns by activity level. 
+The second query gave similar monthly breakdowns, but the columns were by action type (deletion, review, unreview, tagging) instead of user action frequency level. This user may be trying to get an idea of how many ‘patrol’ users are active and what type of actions the perform on average. 
+This user may be coordinating outreach with all of the ‘patrol’ users and wanted to gather this data first to get a sense of action frequency scope, for some research-related pruposes. 
 
 SQL Query Set 3:
 Query1: https://quarry.wmflabs.org/query/22130
 Query2: https://quarry.wmflabs.org/query/22125
 Plausible explanation for use of query: 
-It looks like the first query is tracking the number of logs (grouped by day (date), ordered by date) in the name space 0, where the log type is ‘move’, and is in the English wiki. I think this means the number of articles that moved have been logged as moved. The second query does basically the same thing, but has an extra constraint in that the article has to have a log ID that is found in the name space 10, and the page title contains the string ‘Coord’. The description given for this Quarry was, “The number of English Wikipedia articles tagged with {{coord}} that have been moved on each day.” This user could be trying to determine if there is an unexpected amount of move actions for ‘Coord’-related articles, and just used the first query to help craft the code before narrowing down with the second query. This user also could be a major contributor for a wiki with the name ‘Coord’ in it, and planned on moving articles, and wanted to verify how many were being moved. 
+It looks like the first query is tracking the number of logs (grouped by day (date), ordered by date) in the name space 0, where the log type is ‘move’, and is in the English wiki. 
+I think this means the number of articles that moved have been logged as moved. The second query does basically the same thing, but has an extra constraint in that the article has to have a log ID that is found in the name space 10, and the page title contains the string ‘Coord’. 
+The description given for this Quarry was, “The number of English Wikipedia articles tagged with {{coord}} that have been moved on each day.” 
+This user could be trying to determine if there is an unexpected amount of move actions for ‘Coord’-related articles, and just used the first query to help craft the code before narrowing down with the second query. 
+This user also could be a major contributor for a wiki with the name ‘Coord’ in it, and planned on moving articles, and wanted to verify how many were being moved. 
 
